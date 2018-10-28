@@ -14,6 +14,10 @@
 		AE4670392180A4BF00D20404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4670382180A4BF00D20404 /* Assets.xcassets */; };
 		AE46703C2180A4BF00D20404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE46703A2180A4BF00D20404 /* LaunchScreen.storyboard */; };
 		AE4670472180A4BF00D20404 /* JSExportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4670462180A4BF00D20404 /* JSExportTests.m */; };
+		AE46705C2180AA8D00D20404 /* iOSNative.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4670542180AA8D00D20404 /* iOSNative.m */; };
+		AE46705E2180AA8D00D20404 /* GFBWebProgressLayerLoc.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4670582180AA8D00D20404 /* GFBWebProgressLayerLoc.m */; };
+		AE46705F2180AA8D00D20404 /* GFBNewWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46705B2180AA8D00D20404 /* GFBNewWebViewController.m */; };
+		AED01A2D2181538A00A46527 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = AED01A2C2181538A00A46527 /* test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		AE4670422180A4BF00D20404 /* JSExportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSExportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4670462180A4BF00D20404 /* JSExportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSExportTests.m; sourceTree = "<group>"; };
 		AE4670482180A4BF00D20404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4670532180AA8D00D20404 /* iOSNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSNative.h; sourceTree = "<group>"; };
+		AE4670542180AA8D00D20404 /* iOSNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSNative.m; sourceTree = "<group>"; };
+		AE4670572180AA8D00D20404 /* GFBWebProgressLayerLoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBWebProgressLayerLoc.h; sourceTree = "<group>"; };
+		AE4670582180AA8D00D20404 /* GFBWebProgressLayerLoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBWebProgressLayerLoc.m; sourceTree = "<group>"; };
+		AE46705A2180AA8D00D20404 /* GFBNewWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBNewWebViewController.h; sourceTree = "<group>"; };
+		AE46705B2180AA8D00D20404 /* GFBNewWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBNewWebViewController.m; sourceTree = "<group>"; };
+		AED01A2C2181538A00A46527 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +92,7 @@
 		AE46702B2180A4BF00D20404 /* JSExport */ = {
 			isa = PBXGroup;
 			children = (
+				AE4670512180AA8D00D20404 /* JavaScriptTool */,
 				AE46702F2180A4BF00D20404 /* AppDelegate.h */,
 				AE4670302180A4BF00D20404 /* AppDelegate.m */,
 				AE4670322180A4BF00D20404 /* ViewController.h */,
@@ -109,6 +121,44 @@
 				AE4670482180A4BF00D20404 /* Info.plist */,
 			);
 			path = JSExportTests;
+			sourceTree = "<group>";
+		};
+		AE4670512180AA8D00D20404 /* JavaScriptTool */ = {
+			isa = PBXGroup;
+			children = (
+				AED01A2C2181538A00A46527 /* test.html */,
+				AE4670522180AA8D00D20404 /* JSModel */,
+				AE4670562180AA8D00D20404 /* WebProgress */,
+				AE4670592180AA8D00D20404 /* WebVc */,
+			);
+			path = JavaScriptTool;
+			sourceTree = "<group>";
+		};
+		AE4670522180AA8D00D20404 /* JSModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE4670532180AA8D00D20404 /* iOSNative.h */,
+				AE4670542180AA8D00D20404 /* iOSNative.m */,
+			);
+			path = JSModel;
+			sourceTree = "<group>";
+		};
+		AE4670562180AA8D00D20404 /* WebProgress */ = {
+			isa = PBXGroup;
+			children = (
+				AE4670572180AA8D00D20404 /* GFBWebProgressLayerLoc.h */,
+				AE4670582180AA8D00D20404 /* GFBWebProgressLayerLoc.m */,
+			);
+			path = WebProgress;
+			sourceTree = "<group>";
+		};
+		AE4670592180AA8D00D20404 /* WebVc */ = {
+			isa = PBXGroup;
+			children = (
+				AE46705A2180AA8D00D20404 /* GFBNewWebViewController.h */,
+				AE46705B2180AA8D00D20404 /* GFBNewWebViewController.m */,
+			);
+			path = WebVc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED01A2D2181538A00A46527 /* test.html in Resources */,
 				AE46703C2180A4BF00D20404 /* LaunchScreen.storyboard in Resources */,
 				AE4670392180A4BF00D20404 /* Assets.xcassets in Resources */,
 				AE4670372180A4BF00D20404 /* Main.storyboard in Resources */,
@@ -213,9 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE46705F2180AA8D00D20404 /* GFBNewWebViewController.m in Sources */,
+				AE46705C2180AA8D00D20404 /* iOSNative.m in Sources */,
 				AE4670342180A4BF00D20404 /* ViewController.m in Sources */,
 				AE4670312180A4BF00D20404 /* AppDelegate.m in Sources */,
 				AE46702E2180A4BF00D20404 /* main.m in Sources */,
+				AE46705E2180AA8D00D20404 /* GFBWebProgressLayerLoc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +466,7 @@
 				AE46704D2180A4BF00D20404 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE46704E2180A4BF00D20404 /* Build configuration list for PBXNativeTarget "JSExportTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +475,7 @@
 				AE4670502180A4BF00D20404 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

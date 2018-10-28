@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>测试OC与JS交互</title>
+ </head> 
+ <body>
+  <script>
+      var jsFunc = function() {
+          alert('Objective-C call js to show alert');
+      }
+  
+      var jsParamFunc = function(argument) {
+          document.getElementById('jsParamFuncSpan').innerHTML
+          = argument['name'];
+        
+      }
+  </script>
+  
+  <div style="margin-top: 400px">
+      <h1>Test how to use objective-c call js</h1>
+      <input type="button" value="Call ObjC system camera" onclick="AppModel.callSystemCamera()">
+      <input type="button" value="Call ObjC system alert" onclick="AppModel.showAlert('js过来的title', 'js过来的message')">
+  </div>
+  
+  <div>
+      <input type="button" value="Call ObjC func with JSON " onclick="AppModel.callWithDict({'name': 'testname', 'age': 20, 'height': 170})">
+      <input type="button" value="Call ObjC func with JSON and ObjC call js func to pass args." onclick="AppModel.jsCallObjcAndObjcCallJsWithDict({'name': 'testname', 'age': 10, 'height': 170})">
+  </div>
+  
+  <div>
+      <span id="jsParamFuncSpan" style="color: red; font-size: 50px;"></span>
+  </div>
+  
+ </body>
+</html>
